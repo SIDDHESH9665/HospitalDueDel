@@ -5,6 +5,8 @@ import FinancialAssessment from "../financialAss/FinancialAssessment";
 import NegativeScore from "../negativeLegal/NegativeLegal";
 import AccreditationStatus from "../accreditation/AccreditationStatus";
 import "../styles/dashboard.css";
+import Supplimentry from "../Supplimentry/Supplimentry";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';  
 
 const HospitalDashboard = () => {
   const [hospitals, setHospitals] = useState([]);
@@ -14,12 +16,13 @@ const HospitalDashboard = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    axios.get('/hospitals')
+    axios
+      .get("/hospitals")
       .then((response) => {
         setHospitals(response.data);
         setHospital(response.data[0]);
         setLoading(false);
-      }) 
+      })
       .catch((error) => {
         setError("Failed to fetch hospital data.");
         setLoading(false);
@@ -27,7 +30,7 @@ const HospitalDashboard = () => {
   }, []);
 
   const searchHospital = () => {
-    if (!search.trim()) return; 
+    if (!search.trim()) return;
 
     const foundHospital = hospitals.find((h) => {
       const hospitalName = h.hospital_info.HOSPITAL.toLowerCase().trim();
@@ -47,34 +50,46 @@ const HospitalDashboard = () => {
 
   return (
     <div className="container">
-      <header>
-        <div className="header-content">
-          <h1>Hospital Due Diligence</h1>
-          <nav>
-            <a href="/">Home</a>
-            <a href="/contact">Contact</a>
-            <a href="/services">Services</a>
-          </nav>
+       <header className="header">
+      <div className="header-content">
+        <div className="back-arrow">
+          <ArrowBackIcon />
         </div>
-      </header>
+        <div className="bajaj-logo">
+          <img src="bajaj-logo.png" alt="bajaj-logo" />
+        </div>
+      </div>
+    </header>
       <section className="hero">
+      <div className="hero-background"></div>
+      <div className="hero-content">
         <h2>Welcome to Hospital Due Diligence</h2>
         <p>Search and analyze hospital infrastructure and financial status</p>
-      </section>
+      </div>
+    </section>
       <main>
-      <h3>Hospital Information</h3>
+        <h3>Hospital Information</h3>
         {loading && <p>Loading hospital data...</p>}
         {error && <p className="error">{error}</p>}
         {hospital && (
           <section className="section1">
-             
             <div className="info-container">
               <div className="hospital-info">
-                <img className="hospital" src="/hospital0.png" alt="Hospital Logo" />
+                <img
+                  className="hospital"
+                  src="/hospital0.png"
+                  alt="Hospital Logo"
+                />
                 <div>
                   <h4>{hospital.hospital_info.HOSPITAL}</h4>
                   <p>Address: {hospital.hospital_info.ADDRESS}</p>
-                  <p>Category: {hospital.hospital_info.CATEGORY}</p>
+                  <p
+                    style={{
+                      color: hospital.hospital_info.CATEGORY ? "green" : "red",
+                    }}
+                  >
+                    Category: {hospital.hospital_info.CATEGORY}
+                  </p>
                   <p>Tier: {hospital.hospital_info.TIER}</p>
                 </div>
               </div>
@@ -86,7 +101,9 @@ const HospitalDashboard = () => {
                   onChange={(e) => setSearch(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && searchHospital()}
                 />
-                <button onClick={searchHospital}>Search</button>
+                <button className="btn" onClick={searchHospital}>
+                  Search
+                </button>
               </div>
             </div>
           </section>
@@ -98,14 +115,12 @@ const HospitalDashboard = () => {
             )}
           </div>
           <div className="card">
-          {hospital && (
+            {hospital && (
               <FinancialAssessment data={hospital.financial_assessment} />
-              
             )}
           </div>
           <div className="card">
-          {hospital && <NegativeScore data={hospital.negative_legal} />}
-          
+            {hospital && <NegativeScore data={hospital.negative_legal} />}
           </div>
           <div className="card">
             {hospital && (
@@ -114,6 +129,9 @@ const HospitalDashboard = () => {
           </div>
         </div>
       </main>
+      <div>
+        <Supplimentry/>
+      </div>
       <footer>
         <p>2025 Hospital Due Diligence All Rights Reserved</p>
       </footer>
