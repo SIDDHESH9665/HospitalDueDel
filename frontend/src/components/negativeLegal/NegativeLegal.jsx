@@ -46,18 +46,33 @@ const NegativeLegal = ({ data }) => {
 
   return (
     <div className="negative-container">
-      <div className="negative-img"><img className="negative-img" src="/logo3.png" alt="img" /></div>
-      <h3>Negative Legal</h3>``
+      <div className="negative-img">
+        <img src="/logo3.png" alt="img" />
+        <h3>Negative Legal</h3>
+      </div>
       <div className="negative-row flex">
-        {legalItems.map((item, index) => (
-          <div key={index} className="negative-item">
-            <img src={item.logo} alt={item.label} className="negative-logo" />
-            <p>
-              {item.label}:{" "}
-              <span style={{ color: item.color }}>{item.value}</span>
-            </p>
-          </div>
-        ))}
+        <div className="flex">
+          {legalItems.slice(0, 2).map((item, index) => (
+            <div key={index} className="negative-item">
+              <img src={item.logo} alt={item.label} className="negative-logo" />
+              <p style={{ color: "black" }}>
+                {item.label}
+                <br /> <span style={{ color: item.color }}>{item.value}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="flex">
+          {legalItems.slice(2, 4).map((item, index) => (
+            <div key={index + 2} className="negative-item">
+              <img src={item.logo} alt={item.label} className="negative-logo" />
+              <p style={{ color: "black" }}>
+                {item.label}
+                <br /> <span style={{ color: item.color }}>{item.value}</span>
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
