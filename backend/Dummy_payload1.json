@@ -1,0 +1,290 @@
+
+[
+  {
+    "hospital_info": {
+      "ADDRESS": "NEW DELHI, DELHI - 110048",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "APOLLO SPECTRA HOSPITALS (A UNIT OF APOLLO SPECIALTY HOSPITALS PVT LTD) - Kailash Colony,New Delhi",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary"
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    },
+    "hospital_info": {
+      "ADDRESS": "Fc34, Baba Ram Dev Marg, Janta Flats, Paschim Vihar, Delhi, 110063",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Sri Balaji Action Medical Institute",
+      "INFRA_SCORE": 80.74,
+      "TIER": "Primary",
+      "ID": 12345678
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "A1/159-160, Opposite Japanese Park Gate no.2, Sector 11, Rohini, New Delhi, Delhi",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Rathee Hospital",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 23456789
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Rz-10, Naresh Park, Near Water Tank, Najafgarh Road, New Delhi, Delhi 110041",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Satyabhama Hospital",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 34567890
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Guru Gobind Singh Marg, Near Standard Chartered Bank, Shivaji Park, Punjabi Bagh, Delhi, 110026",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Maharaja Agrasen Hospital",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 45678901
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Sarita Vihar, New Delhi, Delhi 110076",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Indraprastha Apollo Hospital",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 56789012
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Sector 6, Dwarka, New Delhi, Delhi 110075",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Manipal Hospitals Dwarka",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 67890123
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Pocket 1, Sector B, Vasant Kunj, New Delhi, Delhi 110070",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "Fortis Hospital Vasant Kunj",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 78901234
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Lajpat Nagar, New Delhi, Delhi 110024",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "IBS Institute of Brain and Spine",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 89012345
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  },
+  {
+    "hospital_info": {
+      "ADDRESS": "Jawahar Lal Nehru Marg, Delhi Gate, New Delhi, Delhi 110002",
+      "CATEGORY": "Multi-Specialty",
+      "HOSPITAL": "G.B. Pant Hospital",
+      "INFRA_SCORE": 72.33,
+      "TIER": "Primary",
+      "ID": 12345671
+    },
+    "financial_assessment": {
+      "gst_status": "Valid",
+      "pan_status": "Invalid",
+      "epfo_status": "Not Found"
+    },
+    "negative_legal": {
+      "blacklist": 2,
+      "pmjay_status": "Yes",
+      "legal_status": {
+        "criminal_case": "Recent",
+        "civil_case": "Old"
+      }
+    },
+    "accreditation_status": {
+      "jci": true,
+      "nabh": true,
+      "rohini": false,
+      "none": false
+    }
+  }
+]
